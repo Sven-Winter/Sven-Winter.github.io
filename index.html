@@ -1,94 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Dr. Sven Winter - Researcher Homepage</title>
-	<style>
-		body {
-			background-image: url('images/background_image.JPG');
-			background-size: cover;
-			color: #fff;
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-		}
-		.message {
-			font-size: 4em;
-			font-weight: bold;
-			text-align: center;
-			margin-bottom: 0;
-			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-		}
-		.tab {
-			display: none;
-			padding: 2em;
-			max-width: 800px;
-			margin: 0 auto;
-		}
-		h1 {
-			font-size: 2em;
-			font-weight: bold;
-			margin-top: 0;
-		}
-		img {
-			max-width: 100%;
-			height: auto;
-			margin-bottom: 1em;
-		}
-		table {
-			border-collapse: collapse;
-			width: 100%;
-		}
-		th, td {
-			padding: 0.5em;
-			border: 1px solid #fff;
-		}
-		th {
-			background-color: #333;
-			color: #fff;
-			font-weight: bold;
-		}
-	</style>
-</head>
-<body>
-	<div class="container">
-		<div class="message">
-			Welcome to the homepage of Dr. Sven Winter
-		</div>
-	</div>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dr. Sven Winter's Homepage</title>
+    <style>
+      body {
+        background-image: url("images/background_image.jpg");
+        background-size: cover;
+      }
 
-	<div id="about" class="tab">
-		<div class="container">
-			<img src="images/IMG_2746_low_res.jpg" alt="Dr. Sven Winter">
-			<h1>About Me</h1>
-			<p>Dr. rer. nat. Sven Winter is a Postdoctoral Researcher at the Research Institute of Wildlife Ecology, University of Veterinary Medicine Vienna. He received his doctorate from the Goethe-University Frankfurt am Main and is a member of the IUCN SSC Giraffe and Okapi Specialist Group. He is also an academic editor for PlosONE.</p>
-			<p>Institutional email: sven.winter@vetmeduni.ac.at</p>
-			<p>Independent email: svenwinter.research@gmail.com</p>
-			<p><a href="https://scholar.google.com/citations?user=4TA6gZMAAAAJ&hl=de">Google Scholar</a></p>
-			<p><a href="https://orcid.org/0000-0002-1890-0977">ORCID</a></p>
-		</div>
-	</div>
+      #header {
+        text-align: center;
+        padding: 50px;
+        font-size: 36px;
+        color: white;
+      }
 
-	<div id="projects" class="tab">
-		<div class="container">
-			<h1>Projects</h1>
-			<p>Coming soon...</p>
-		</div>
-	</div>
+      #nav {
+        background-color: #f2f2f2;
+        overflow: hidden;
+      }
 
-	<div id="publications" class="tab">
-		<div class="container">
-			<h1>Publications</h1>
-			<table>
-				<thead>
-					<tr>
-						<th>Authors</th>
-						<th>Title</th>
-						<th>Journal</th>
-						<th>Year</
+      #nav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      #nav a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      #main {
+        padding: 20px;
+      }
+
+      #about-me {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      #about-me img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+
+      #projects {
+        margin-top: 50px;
+      }
+
+      #publications {
+        margin-top: 50px;
+      }
+
+      #partners {
+        margin-top: 50px;
+        text-align: center;
+      }
+
+      #partners img {
+        height: 80px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Welcome to the homepage of Dr. Sven Winter</h1>
+    </div>
+
+    <div id="nav">
+      <a class="active" href="#">About Me</a>
+      <a href="#">Projects</a>
+      <a href="#">Publications</a>
+      <a href="#">Partners</a>
+    </div>
+
+    <div id="main">
+      <div id="about-me">
+        <img src="images/profile-picture.jpg" alt="Profile Picture">
+        <p>Dr. rer. nat. Sven Winter is a Postdoctoral Researcher at the Research Institute of Wildlife Ecology, University of Veterinary Medicine Vienna. He holds a doctorate from the Goethe-University Frankfurt am Main, and is a member of the IUCN SSC Giraffe and Okapi Specialist Group. Dr. Winter is also an academic editor for PlosONE.</p>
+        <p>Contact Information:</p>
+        <p>Institutional e-mail: <a href="mailto:sven.winter@vetmeduni.ac.at">sven.winter@vetmeduni.ac.at</a></p>
+        <p>Independent e-mail: <a href="mailto:svenwinter.research@gmail.com">svenwinter.research@gmail.com</a></p>
+        <p>Google Scholar Profile: <a href="https://scholar.google.com/citations?user=4TA6gZMAAAAJ&hl=de">https://scholar.google.com/citations?user=4TA6gZMAAAAJ&hl=de</a></p>
+        <p>ORCID: <a href="https://orcid.org/0000-0002-1890-0977">https://orcid.org/0000
