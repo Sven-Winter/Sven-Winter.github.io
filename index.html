@@ -1,94 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Dr. Sven Winter</title>
+	<title>Dr. Sven Winter - Researcher Homepage</title>
 	<style>
 		body {
-			background-image: url("images/background-image.jpg");
+			background-image: url('images/background_image.JPG');
 			background-size: cover;
 			color: #fff;
-			font-family: sans-serif;
+			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
 		}
 		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
 		}
-		h1 {
+		.message {
+			font-size: 4em;
+			font-weight: bold;
 			text-align: center;
-			font-size: 48px;
-			margin-top: 100px;
-			margin-bottom: 50px;
-		}
-		h2 {
-			font-size: 36px;
-			margin-top: 50px;
-			margin-bottom: 20px;
+			margin-bottom: 0;
+			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 		}
 		.tab {
 			display: none;
+			padding: 2em;
+			max-width: 800px;
+			margin: 0 auto;
 		}
-		.tab.active {
-			display: block;
-		}
-		nav {
-			background-color: #333;
-			padding: 10px;
-			text-align: center;
-			margin-top: 50px;
-		}
-		nav a {
-			color: #fff;
-			text-decoration: none;
-			margin: 0 10px;
-			font-size: 24px;
-		}
-		nav a:hover {
-			text-decoration: underline;
+		h1 {
+			font-size: 2em;
+			font-weight: bold;
+			margin-top: 0;
 		}
 		img {
 			max-width: 100%;
 			height: auto;
-			display: block;
-			margin: 0 auto;
-			margin-bottom: 20px;
+			margin-bottom: 1em;
 		}
 		table {
 			border-collapse: collapse;
 			width: 100%;
-			margin-bottom: 50px;
 		}
 		th, td {
-			padding: 10px;
-			text-align: left;
-			border-bottom: 1px solid #ddd;
+			padding: 0.5em;
+			border: 1px solid #fff;
 		}
 		th {
-			background-color: #f2f2f2;
+			background-color: #333;
+			color: #fff;
+			font-weight: bold;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<h1>Welcome to the homepage of Dr. Sven Winter</h1>
-		<nav>
-			<a href="#" class="tab-link" data-tab="about-me">About Me</a>
-			<a href="#" class="tab-link" data-tab="projects">Projects</a>
-			<a href="#" class="tab-link" data-tab="publications">Publications</a>
-			<a href="#" class="tab-link" data-tab="partners">Partners</a>
-		</nav>
-		<div class="tab" id="about-me">
-			<img src="images/IMG_2746_low_res.jpg" alt="Profile Picture">
-			<h2>About Me</h2>
-			<p>Dr. rer. nat. Sven Winter is a Postdoctoral Researcher at the Research Institute of Wildlife Ecology, University of Veterinary Medicine Vienna. He received his doctorate from the Goethe-University Frankfurt am Main and is a member of the IUCN SSC Giraffe and Okapi Specialist Group. Dr. Winter is also an Academic Editor for PlosONE.</p>
-			<p>Contact:</p>
-			<ul>
-				<li>Institutional email: sven.winter@vetmeduni.ac.at</li>
-				<li>Independent email: svenwinter.research@gmail.com</li>
-			</ul>
-			<p>Links:</p>
-			<ul>
-				<li><a href="https://scholar.google.com/citations?user=4TA6gZMAAAAJ&hl=de" target="_blank">Google
+		<div class="message">
+			Welcome to the homepage of Dr. Sven Winter
+		</div>
+	</div>
+
+	<div id="about" class="tab">
+		<div class="container">
+			<img src="images/IMG_2746_low_res.jpg" alt="Dr. Sven Winter">
+			<h1>About Me</h1>
+			<p>Dr. rer. nat. Sven Winter is a Postdoctoral Researcher at the Research Institute of Wildlife Ecology, University of Veterinary Medicine Vienna. He received his doctorate from the Goethe-University Frankfurt am Main and is a member of the IUCN SSC Giraffe and Okapi Specialist Group. He is also an academic editor for PlosONE.</p>
+			<p>Institutional email: sven.winter@vetmeduni.ac.at</p>
+			<p>Independent email: svenwinter.research@gmail.com</p>
+			<p><a href="https://scholar.google.com/citations?user=4TA6gZMAAAAJ&hl=de">Google Scholar</a></p>
+			<p><a href="https://orcid.org/0000-0002-1890-0977">ORCID</a></p>
+		</div>
+	</div>
+
+	<div id="projects" class="tab">
+		<div class="container">
+			<h1>Projects</h1>
+			<p>Coming soon...</p>
+		</div>
+	</div>
+
+	<div id="publications" class="tab">
+		<div class="container">
+			<h1>Publications</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>Authors</th>
+						<th>Title</th>
+						<th>Journal</th>
+						<th>Year</
